@@ -1,0 +1,13 @@
+<zui name="HelloZui" author="Zero" copyright="(C) KK Corporation.">
+	<loadscript path="layout/onload.js" type="js"/>
+	<loadscript path="layout/onload.lua" type="lua"/>
+	<window title="layoutä¯ÀÀÆ÷" id="´°¿Ú" style=47 left=50 top=50 with=600 height=500 Visible="true" SizeTunable="true" BkgImage="res/±³¾°.jpg">
+		<Label title="µØÖ·:" left=10 top=35 with=50 height=25 Visible="true" />
+		<Edit title="http://www.baidu.com" id="°´Å¥" left=70 top=35 with=450 height=25 Visible="true" onevent="layout_click()"/>
+		<Button title="×ªµ½" id="°´Å¥" left=530 top=35 with=60 height=25 Visible="true" onevent="layout_click()"/>
+		<TabBox title="" id="web" left=10 top=70 with=580 height=360 Visible="true" onevent="layout_click()"/>
+		
+		
+		<!--<WebBrowser title="layoutÓÎÀÀÆ÷" id="web" left=50 top=100 with=360 height=360 Visible="true" onevent="layout_click()"/>-->
+	</window>
+</zui>
