@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ZUI: ZUI/core/global.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ZUI
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">ZUI界面库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.12 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3e0fb2de5aa5f42755bb5802fdab08b.html">ZUI</a></li><li class="navelem"><a class="el" href="dir_1808e2a2d31f09f097feb27c304ab5c6.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">global.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="global_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef __ZUI_CORE_GLOBAL_H__</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define __ZUI_CORE_GLOBAL_H__</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span>  <a class="code" href="struct___z_image.html">ZuiImage</a> Global_Res_Ctl[4][3];      <span class="comment">//窗口控制按钮资源</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span>  <a class="code" href="struct___z_image.html">ZuiImage</a> Global_Res_ScrollBar[4];   <span class="comment">//滚动条</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span>  <a class="code" href="struct___z_string_format.html">ZuiStringFormat</a> Global_StringFormat;<span class="comment">//默认字体风格</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span>  rb_root *Global_ControlClass;       <span class="comment">//全局控件类</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span>  rb_root *Global_ControlArray;       <span class="comment">//全局Control数组</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span>  rb_root *Global_ExportList;     <span class="comment">//全局导出表</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">extern</span> HINSTANCE m_hInstance;       <span class="comment">//模块句柄</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <a class="code" href="struct___d_array.html">DArray</a> *m_aPreMessages;  <span class="comment">//所有ZuiPaintManager实例数组</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span>ZuiBool <a class="code" href="global_8h.html#a1a2b109d1fbaf8278442944380ab975c">ZuiGlobalInit</a>();</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif  //__ZUI_CORE_GLOBAL_H__</span></div><div class="ttc" id="struct___d_array_html"><div class="ttname"><a href="struct___d_array.html">_DArray</a></div><div class="ttdoc">动态数组结构 </div><div class="ttdef"><b>Definition:</b> carray.h:27</div></div>
+<div class="ttc" id="struct___z_image_html"><div class="ttname"><a href="struct___z_image.html">_ZImage</a></div><div class="ttdoc">图像 </div><div class="ttdef"><b>Definition:</b> gdi.h:31</div></div>
+<div class="ttc" id="struct___z_string_format_html"><div class="ttname"><a href="struct___z_string_format.html">_ZStringFormat</a></div><div class="ttdoc">文本格式 </div><div class="ttdef"><b>Definition:</b> gdi.h:54</div></div>
+<div class="ttc" id="global_8h_html_a1a2b109d1fbaf8278442944380ab975c"><div class="ttname"><a href="global_8h.html#a1a2b109d1fbaf8278442944380ab975c">ZuiGlobalInit</a></div><div class="ttdeci">ZuiBool ZuiGlobalInit()</div><div class="ttdoc">此函数用作初始化全局对象. </div><div class="ttdef"><b>Definition:</b> global.c:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

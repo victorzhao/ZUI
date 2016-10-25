@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ZUI: _ZuiPaintManager结构体 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ZUI
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">ZUI界面库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.12 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">成员变量</a>  </div>
+  <div class="headertitle">
+<div class="title">_ZuiPaintManager结构体 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>绘制管理器结构  
+ <a href="struct___zui_paint_manager.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="manager_8h_source.html">manager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+成员变量</h2></td></tr>
+<tr class="memitem:ad243f5039cedacb25cf2074de6396dde"><td class="memItemLeft" align="right" valign="top"><a id="ad243f5039cedacb25cf2074de6396dde"></a>
+HDC&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#ad243f5039cedacb25cf2074de6396dde">m_hDcPaint</a></td></tr>
+<tr class="memdesc:ad243f5039cedacb25cf2074de6396dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">要ZuiPaintManager进行Direct绘图操作的窗体句柄 <br /></td></tr>
+<tr class="separator:ad243f5039cedacb25cf2074de6396dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93005f32fb90aa94c5ba34129a28dc6e"><td class="memItemLeft" align="right" valign="top"><a id="a93005f32fb90aa94c5ba34129a28dc6e"></a>
+<a class="el" href="gdi_8h.html#a0965cffe4d487163cde43472e40e0c39">ZuiGraphics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a93005f32fb90aa94c5ba34129a28dc6e">m_hDcOffscreen</a></td></tr>
+<tr class="memdesc:a93005f32fb90aa94c5ba34129a28dc6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">直接绘制到窗体的DC(为窗体的整个区域包括费客户区) <br /></td></tr>
+<tr class="separator:a93005f32fb90aa94c5ba34129a28dc6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af82701061907f0ea430a68cb76e1bbde"><td class="memItemLeft" align="right" valign="top"><a id="af82701061907f0ea430a68cb76e1bbde"></a>
+COLORREF *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#af82701061907f0ea430a68cb76e1bbde">m_pOffscreenBits</a></td></tr>
+<tr class="memdesc:af82701061907f0ea430a68cb76e1bbde"><td class="mdescLeft">&#160;</td><td class="mdescRight">内存缓冲区绘图DC <br /></td></tr>
+<tr class="separator:af82701061907f0ea430a68cb76e1bbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8675a56d30d1af925255ca223fbd835d"><td class="memItemLeft" align="right" valign="top"><a id="a8675a56d30d1af925255ca223fbd835d"></a>
+TOOLINFO&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a8675a56d30d1af925255ca223fbd835d">m_ToolTip</a></td></tr>
+<tr class="memdesc:a8675a56d30d1af925255ca223fbd835d"><td class="mdescLeft">&#160;</td><td class="mdescRight">提示窗口句柄 <br /></td></tr>
+<tr class="separator:a8675a56d30d1af925255ca223fbd835d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a600d0d89afccda5ef6e09578f44fa9b7"><td class="memItemLeft" align="right" valign="top"><a id="a600d0d89afccda5ef6e09578f44fa9b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a600d0d89afccda5ef6e09578f44fa9b7">m_iHoverTime</a></td></tr>
+<tr class="memdesc:a600d0d89afccda5ef6e09578f44fa9b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">提示消息 <br /></td></tr>
+<tr class="separator:a600d0d89afccda5ef6e09578f44fa9b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc617428b7f3c427e2af8c219f61f51"><td class="memItemLeft" align="right" valign="top"><a id="a6cc617428b7f3c427e2af8c219f61f51"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a6cc617428b7f3c427e2af8c219f61f51">m_bShowUpdateRect</a></td></tr>
+<tr class="memdesc:a6cc617428b7f3c427e2af8c219f61f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">鼠标悬停世间 <br /></td></tr>
+<tr class="separator:a6cc617428b7f3c427e2af8c219f61f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d0ee6db0605377f9b55715dc1cfc25"><td class="memItemLeft" align="right" valign="top"><a id="a10d0ee6db0605377f9b55715dc1cfc25"></a>
+<a class="el" href="struct___z_control.html">ZuiControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a10d0ee6db0605377f9b55715dc1cfc25">m_pRoot</a></td></tr>
+<tr class="memdesc:a10d0ee6db0605377f9b55715dc1cfc25"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否显示更新区域 调试使用 <br /></td></tr>
+<tr class="separator:a10d0ee6db0605377f9b55715dc1cfc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c020855ad7bfdb74d7c85247b08fbaa"><td class="memItemLeft" align="right" valign="top"><a id="a7c020855ad7bfdb74d7c85247b08fbaa"></a>
+<a class="el" href="struct___z_control.html">ZuiControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a7c020855ad7bfdb74d7c85247b08fbaa">m_pFocus</a></td></tr>
+<tr class="memdesc:a7c020855ad7bfdb74d7c85247b08fbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">控件树根节点 <br /></td></tr>
+<tr class="separator:a7c020855ad7bfdb74d7c85247b08fbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cd692cab286e7727ac605301473bea"><td class="memItemLeft" align="right" valign="top"><a id="af9cd692cab286e7727ac605301473bea"></a>
+<a class="el" href="struct___z_control.html">ZuiControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#af9cd692cab286e7727ac605301473bea">m_pEventHover</a></td></tr>
+<tr class="memdesc:af9cd692cab286e7727ac605301473bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">处于获得焦点状态的控件 <br /></td></tr>
+<tr class="separator:af9cd692cab286e7727ac605301473bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869b499126776e67a77a71ed75cabb7f"><td class="memItemLeft" align="right" valign="top"><a id="a869b499126776e67a77a71ed75cabb7f"></a>
+<a class="el" href="struct___z_control.html">ZuiControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a869b499126776e67a77a71ed75cabb7f">m_pEventClick</a></td></tr>
+<tr class="memdesc:a869b499126776e67a77a71ed75cabb7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">处于鼠标悬停状态的控件 <br /></td></tr>
+<tr class="separator:a869b499126776e67a77a71ed75cabb7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab03a67393e75970d605f88ad02cb8ff8"><td class="memItemLeft" align="right" valign="top"><a id="ab03a67393e75970d605f88ad02cb8ff8"></a>
+<a class="el" href="struct___z_control.html">ZuiControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#ab03a67393e75970d605f88ad02cb8ff8">m_pEventKey</a></td></tr>
+<tr class="memdesc:ab03a67393e75970d605f88ad02cb8ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">被鼠标点击的控件 <br /></td></tr>
+<tr class="separator:ab03a67393e75970d605f88ad02cb8ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318546fcfc22cb6f5f2ed3dacc3fb2e3"><td class="memItemLeft" align="right" valign="top"><a id="a318546fcfc22cb6f5f2ed3dacc3fb2e3"></a>
+POINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a318546fcfc22cb6f5f2ed3dacc3fb2e3">m_ptLastMousePos</a></td></tr>
+<tr class="memdesc:a318546fcfc22cb6f5f2ed3dacc3fb2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">接收键盘输入的控件 <br /></td></tr>
+<tr class="separator:a318546fcfc22cb6f5f2ed3dacc3fb2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaca67345f266adac9a6297ad70d4936"><td class="memItemLeft" align="right" valign="top"><a id="aaaca67345f266adac9a6297ad70d4936"></a>
+SIZE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#aaaca67345f266adac9a6297ad70d4936">m_szMaxWindow</a></td></tr>
+<tr class="memdesc:aaaca67345f266adac9a6297ad70d4936"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口最小大小 <br /></td></tr>
+<tr class="separator:aaaca67345f266adac9a6297ad70d4936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8affa317c9d3956bd1d7a07b5a926616"><td class="memItemLeft" align="right" valign="top"><a id="a8affa317c9d3956bd1d7a07b5a926616"></a>
+SIZE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a8affa317c9d3956bd1d7a07b5a926616">m_szInitWindowSize</a></td></tr>
+<tr class="memdesc:a8affa317c9d3956bd1d7a07b5a926616"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口最大大小 <br /></td></tr>
+<tr class="separator:a8affa317c9d3956bd1d7a07b5a926616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e0459f7712c7b456a441c221eff7bc"><td class="memItemLeft" align="right" valign="top"><a id="af6e0459f7712c7b456a441c221eff7bc"></a>
+UINT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#af6e0459f7712c7b456a441c221eff7bc">m_uTimerID</a></td></tr>
+<tr class="memdesc:af6e0459f7712c7b456a441c221eff7bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗体初始化时的大小 <br /></td></tr>
+<tr class="separator:af6e0459f7712c7b456a441c221eff7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4fc676b106d31143f318c8d0847fae3"><td class="memItemLeft" align="right" valign="top"><a id="ab4fc676b106d31143f318c8d0847fae3"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#ab4fc676b106d31143f318c8d0847fae3">m_bFirstLayout</a></td></tr>
+<tr class="memdesc:ab4fc676b106d31143f318c8d0847fae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">当前定时器ID <br /></td></tr>
+<tr class="separator:ab4fc676b106d31143f318c8d0847fae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3784667c48590c343f77f397a7a6bb4f"><td class="memItemLeft" align="right" valign="top"><a id="a3784667c48590c343f77f397a7a6bb4f"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a3784667c48590c343f77f397a7a6bb4f">m_bUpdateNeeded</a></td></tr>
+<tr class="memdesc:a3784667c48590c343f77f397a7a6bb4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否是第一次布局 相当于窗口初始化 <br /></td></tr>
+<tr class="separator:a3784667c48590c343f77f397a7a6bb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6d97fa3dfd7778679ce11c91ef815f"><td class="memItemLeft" align="right" valign="top"><a id="a5e6d97fa3dfd7778679ce11c91ef815f"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a5e6d97fa3dfd7778679ce11c91ef815f">m_bFocusNeeded</a></td></tr>
+<tr class="memdesc:a5e6d97fa3dfd7778679ce11c91ef815f"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否需要更新界面布局 <br /></td></tr>
+<tr class="separator:a5e6d97fa3dfd7778679ce11c91ef815f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68db5d683674636a8ae31472326b3fb0"><td class="memItemLeft" align="right" valign="top"><a id="a68db5d683674636a8ae31472326b3fb0"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a68db5d683674636a8ae31472326b3fb0">m_bOffscreenPaint</a></td></tr>
+<tr class="memdesc:a68db5d683674636a8ae31472326b3fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否需要焦点 <br /></td></tr>
+<tr class="separator:a68db5d683674636a8ae31472326b3fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd558d35b792467fc6c11cb784ef3f35"><td class="memItemLeft" align="right" valign="top"><a id="abd558d35b792467fc6c11cb784ef3f35"></a>
+BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#abd558d35b792467fc6c11cb784ef3f35">m_nOpacity</a></td></tr>
+<tr class="memdesc:abd558d35b792467fc6c11cb784ef3f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否需要开双缓存绘图 <br /></td></tr>
+<tr class="separator:abd558d35b792467fc6c11cb784ef3f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a821bebd64c0576e56ba971dc65141ca0"><td class="memItemLeft" align="right" valign="top"><a id="a821bebd64c0576e56ba971dc65141ca0"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a821bebd64c0576e56ba971dc65141ca0">m_bLayered</a></td></tr>
+<tr class="memdesc:a821bebd64c0576e56ba971dc65141ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">窗口透明度 <br /></td></tr>
+<tr class="separator:a821bebd64c0576e56ba971dc65141ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89862918e48ef07dde80d4eea8e01af3"><td class="memItemLeft" align="right" valign="top"><a id="a89862918e48ef07dde80d4eea8e01af3"></a>
+RECT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a89862918e48ef07dde80d4eea8e01af3">m_rcLayeredInset</a></td></tr>
+<tr class="memdesc:a89862918e48ef07dde80d4eea8e01af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否分层 <br /></td></tr>
+<tr class="separator:a89862918e48ef07dde80d4eea8e01af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91677b518d3087757d10f2b3b60084b2"><td class="memItemLeft" align="right" valign="top"><a id="a91677b518d3087757d10f2b3b60084b2"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a91677b518d3087757d10f2b3b60084b2">m_bMouseCapture</a></td></tr>
+<tr class="memdesc:a91677b518d3087757d10f2b3b60084b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否需要支持鼠标追踪 <br /></td></tr>
+<tr class="separator:a91677b518d3087757d10f2b3b60084b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11ec032ab0646f2143322774f2141e6"><td class="memItemLeft" align="right" valign="top"><a id="af11ec032ab0646f2143322774f2141e6"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#af11ec032ab0646f2143322774f2141e6">m_bIsPainting</a></td></tr>
+<tr class="memdesc:af11ec032ab0646f2143322774f2141e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否需要支持鼠标捕获 <br /></td></tr>
+<tr class="separator:af11ec032ab0646f2143322774f2141e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece112425cb4183a49eba820e8ae8227"><td class="memItemLeft" align="right" valign="top"><a id="aece112425cb4183a49eba820e8ae8227"></a>
+BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#aece112425cb4183a49eba820e8ae8227">m_bUsedVirtualWnd</a></td></tr>
+<tr class="memdesc:aece112425cb4183a49eba820e8ae8227"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否正在绘制 <br /></td></tr>
+<tr class="separator:aece112425cb4183a49eba820e8ae8227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36a302e726b78a90acb609be51de27c9"><td class="memItemLeft" align="right" valign="top"><a id="a36a302e726b78a90acb609be51de27c9"></a>
+<a class="el" href="carray_8h.html#ab2407c9ab6742127a7941b7526f3394d">DArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a36a302e726b78a90acb609be51de27c9">m_aPostPaintControls</a></td></tr>
+<tr class="memdesc:a36a302e726b78a90acb609be51de27c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">时钟句柄数组 <br /></td></tr>
+<tr class="separator:a36a302e726b78a90acb609be51de27c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6324aaf5757567c85b6645d1dcee72"><td class="memItemLeft" align="right" valign="top"><a id="a6e6324aaf5757567c85b6645d1dcee72"></a>
+<a class="el" href="carray_8h.html#ab2407c9ab6742127a7941b7526f3394d">DArray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___zui_paint_manager.html#a6e6324aaf5757567c85b6645d1dcee72">m_aFoundControls</a></td></tr>
+<tr class="memdesc:a6e6324aaf5757567c85b6645d1dcee72"><td class="mdescLeft">&#160;</td><td class="mdescRight">发送绘制请求的控件集合 <br /></td></tr>
+<tr class="separator:a6e6324aaf5757567c85b6645d1dcee72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>绘制管理器结构 </p>
+</div><hr/>该结构体的文档由以下文件生成:<ul>
+<li>ZUI/core/<a class="el" href="manager_8h_source.html">manager.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>

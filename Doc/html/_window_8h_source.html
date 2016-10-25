@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.12"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ZUI: ZUI/control/Window.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">ZUI
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">ZUI界面库</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.12 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',false,false,'search.php','搜索');
+});
+</script>
+<div id="main-nav"></div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e3e0fb2de5aa5f42755bb5802fdab08b.html">ZUI</a></li><li class="navelem"><a class="el" href="dir_6386fbdb533ac78d7c7859476e1d1d58.html">control</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Window.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef __UIWINDOW_H__</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define __UIWINDOW_H__</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define Proc_Window_SetNoBox    1001    //设置为无边框窗体</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="struct___z_window.html">    6</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___z_window.html">_ZWindow</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="struct___z_rect.html">ZRect</a> m_rect;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    ZuiBool m_nobox;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    HWND m_hWnd;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    WNDPROC m_OldWndProc;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="struct___z_control.html">ZuiControl</a> root;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="struct___zui_paint_manager.html">ZuiPaintManager</a> m_pm;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    ZCtlProc old_call;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">void</span> *old_udata;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}*<a class="code" href="struct___z_window.html">ZuiWindow</a>, <a class="code" href="struct___z_window.html">ZWindow</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;ZEXPORT ZuiAny ZCALL ZuiWindowProc(ZuiInt ProcId, <a class="code" href="struct___z_control.html">ZuiControl</a> cp, <a class="code" href="struct___z_window.html">ZuiWindow</a> p, ZuiAny Param1, ZuiAny Param2, ZuiAny Param3);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif  //__UIWINDOW_H__</span></div><div class="ttc" id="struct___z_control_html"><div class="ttname"><a href="struct___z_control.html">_ZControl</a></div><div class="ttdoc">控件基类结构 </div><div class="ttdef"><b>Definition:</b> control.h:66</div></div>
+<div class="ttc" id="struct___zui_paint_manager_html"><div class="ttname"><a href="struct___zui_paint_manager.html">_ZuiPaintManager</a></div><div class="ttdoc">绘制管理器结构 </div><div class="ttdef"><b>Definition:</b> manager.h:100</div></div>
+<div class="ttc" id="struct___z_window_html"><div class="ttname"><a href="struct___z_window.html">_ZWindow</a></div><div class="ttdoc">窗口控件结构 </div><div class="ttdef"><b>Definition:</b> Window.h:6</div></div>
+<div class="ttc" id="struct___z_rect_html"><div class="ttname"><a href="struct___z_rect.html">_ZRect</a></div><div class="ttdoc">矩形 </div><div class="ttdef"><b>Definition:</b> ZUI.h:87</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+制作者 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.12
+</small></address>
+</body>
+</html>
