@@ -153,6 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="control\Browser.c" />
+    <ClCompile Include="control\Edit.c" />
     <ClCompile Include="control\Register.c" />
     <ClCompile Include="control\Button.c" />
     <ClCompile Include="control\Window.c" />
@@ -184,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="control\Browser.h" />
+    <ClInclude Include="control\Edit.h" />
     <ClInclude Include="control\Register.h" />
     <ClInclude Include="control\Button.h" />
     <ClInclude Include="control\Window.h" />
