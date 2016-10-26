@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
 <Window nobox="true" bordercolor="#FFF202Ff" mininfo="100,150" size="360,500">
 
-	<HorizontalLayout height="32" bkcolor="#FFFFFFFF">
-		<Control drag="true" />
+	<HorizontalLayout drag="true" height="32">
+		<VerticalLayout drag="true">
+			<Option bkcolor="#FFFF0F00" maxwidth="100" minwidth="60"/>
+		</VerticalLayout>
 		<Button width="30" height="23" tooltip="最小化" normalimage="res:res/default/11.png" hotimage="res:res/default/12.png" pushedimage="res:res/default/13.png"/>
 		<Button width="30" height="23" tooltip="最大化" normalimage="res:res/default/5.png" hotimage="res:res/default/6.png" pushedimage="res:res/default/7.png"/>
 		<Button width="30" height="23" tooltip="关闭" normalimage="res:res/default/1.png" hotimage="res:res/default/2.png" pushedimage="res:res/default/3.png"/>
