@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
-<Window nobox="true" mininfo="100,150" size="360,500">
+<Window nobox="true" bordercolor="#FFF202Ff" mininfo="100,150" size="360,500">
 
-	<HorizontalLayout height="32" bkimage="res:res/default/12.png" bkcolor="#FFFFFFFF">
+	<HorizontalLayout height="32" bkcolor="#FFFFFFFF">
 		<Control drag="true" />
 		<Button width="30" height="23" tooltip="最小化" normalimage="res:res/default/11.png" hotimage="res:res/default/12.png" pushedimage="res:res/default/13.png"/>
 		<Button width="30" height="23" tooltip="最大化" normalimage="res:res/default/5.png" hotimage="res:res/default/6.png" pushedimage="res:res/default/7.png"/>
 		<Button width="30" height="23" tooltip="关闭" normalimage="res:res/default/1.png" hotimage="res:res/default/2.png" pushedimage="res:res/default/3.png"/>
 	</HorizontalLayout>
 	<HorizontalLayout height="40" bkcolor="#FFF2F2F2">
-		<Button text="扩展按钮" width="40" tooltip="提示" padding="5,5,5,0"/>
-		<Button text="扩展按钮" width="40" tooltip="提示" />
-		<Button text="刷新" width="40" tooltip="提示" />
-		<Edit text="http://127.0.0.1/user/login" />
+		<Button text="扩展按钮" width="28" tooltip="后退" padding="5,6,5,6"/>
+		<Button text="扩展按钮" width="28" tooltip="前进" padding="5,6,5,6"/>
+		<Button text="刷新" width="28" tooltip="刷新" padding="5,6,5,6"/>
+		<Edit text="http://127.0.0.1/user/login" padding="0,6,0,6"/>
 	</HorizontalLayout>
 	<TabLayout>
 		<Browser url="http://127.0.0.1/user/login"/>
