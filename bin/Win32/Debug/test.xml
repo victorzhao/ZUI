@@ -5,9 +5,9 @@
 		<VerticalLayout drag="true">
 			<Option bkcolor="#FFFF0F00" maxwidth="100" minwidth="60"/>
 		</VerticalLayout>
-		<Button width="30" height="23" tooltip="最小化" normalimage="res:res/default/11.png" hotimage="res:res/default/12.png" pushedimage="res:res/default/13.png"/>
-		<Button width="30" height="23" tooltip="最大化" normalimage="res:res/default/5.png" hotimage="res:res/default/6.png" pushedimage="res:res/default/7.png"/>
-		<Button width="30" height="23" tooltip="关闭" normalimage="res:res/default/1.png" hotimage="res:res/default/2.png" pushedimage="res:res/default/3.png"/>
+		<Button name="min" width="30" height="23" tooltip="最小化" normalimage="res:res/default/11.png" hotimage="res:res/default/12.png" pushedimage="res:res/default/13.png"/>
+		<Button name="max" width="30" height="23" tooltip="最大化" normalimage="res:res/default/5.png" hotimage="res:res/default/6.png" pushedimage="res:res/default/7.png"/>
+		<Button name="clos" width="30" height="23" tooltip="关闭" normalimage="res:res/default/1.png" hotimage="res:res/default/2.png" pushedimage="res:res/default/3.png"/>
 	</HorizontalLayout>
 	<HorizontalLayout height="40" bordercolor="#FFF202Ff" bkcolor="#FFFFFFFF">
 		<Button text="扩展按钮" width="28" tooltip="后退" padding="5,6,5,6"/>
