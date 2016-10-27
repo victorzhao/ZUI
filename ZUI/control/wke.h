@@ -91,8 +91,12 @@ typedef enum {
 
 
 typedef char utf8;
-
+#if !defined(__cplusplus)
 typedef void* jsExecState;
+#else
+struct JsExecStateInfo;
+typedef JsExecStateInfo* jsExecState;
+#endif
 typedef __int64 jsValue;
 
 
@@ -104,9 +108,11 @@ typedef __int64 jsValue;
     typedef wke::CString* wkeString;
 
 #else
-typedef void* wkeWebView;
+    struct _tagWkeWebView;
+    typedef struct _tagWkeWebView* wkeWebView;
 
-typedef void* wkeString;
+    struct _tagWkeString;
+    typedef struct _tagWkeString* wkeString;
 #endif
 
 
@@ -178,6 +184,9 @@ WKE_API void wkeDestroyWebView(wkeWebView webView);
 WKE_API const char* wkeGetName(wkeWebView webView);
 WKE_API void wkeSetName(wkeWebView webView, const char* name);
 
+WKE_API void wkeSetHandle(wkeWebView webView, HWND wnd);
+WKE_API void wkeSetHandleOffset(wkeWebView webView, int x, int y);
+
 WKE_API bool wkeIsTransparent(wkeWebView webView);
 WKE_API void wkeSetTransparent(wkeWebView webView, bool transparent);
 
@@ -220,6 +229,7 @@ WKE_API void wkePaint(wkeWebView webView, void* bits,int bufWid, int bufHei, int
 WKE_API void wkePaint2(wkeWebView webView, void* bits,int pitch);
 WKE_API void wkeRepaintIfNeeded(wkeWebView webView);
 WKE_API HDC wkeGetViewDC(wkeWebView webView);
+WKE_API HWND wkeGetHostHWND(wkeWebView webView);
 
 WKE_API bool wkeCanGoBack(wkeWebView webView);
 WKE_API bool wkeGoBack(wkeWebView webView);
