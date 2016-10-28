@@ -169,7 +169,6 @@
     <ClCompile Include="core\resdb.c" />
     <ClCompile Include="core\string.c" />
     <ClCompile Include="core\tree.c" />
-    <ClCompile Include="core\unzip.c" />
     <ClCompile Include="debug.c" />
     <ClCompile Include="layout\Layout.c" />
     <ClCompile Include="layout\HorizontalLayout.c" />
@@ -202,7 +201,6 @@
     <ClInclude Include="core\resdb.h" />
     <ClInclude Include="core\string.h" />
     <ClInclude Include="core\tree.h" />
-    <ClInclude Include="core\unzip.h" />
     <ClInclude Include="layout\Layout.h" />
     <ClInclude Include="layout\HorizontalLayout.h" />
     <ClInclude Include="layout\TabLayout.h" />
