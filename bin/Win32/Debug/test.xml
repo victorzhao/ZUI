@@ -9,7 +9,6 @@
 		<Option name="max" width="30" height="23" tooltip="最大化" normalimage="res:res/default/5.png" hotimage="res:res/default/6.png" pushedimage="res:res/default/7.png" selectedimage="res:res/default/8.png" selectedhotimage="res:res/default/9.png" selectedpushedimage="res:res/default/10.png"/>
 		<Button name="clos" width="30" height="23" tooltip="关闭" normalimage="res:res/default/1.png" hotimage="res:res/default/2.png" pushedimage="res:res/default/3.png"/>
 	</HorizontalLayout>
-	<AA bkimage="url:https://www.baidu.com/img/baidu_jgylogo3.gif" />
 	<HorizontalLayout height="40" bkcolor="#FFFFFFFF">
 		<Button text="后" width="28" tooltip="后退" padding="5,6,5,6"/>
 		<Button text="前" width="28" tooltip="前进" padding="5,6,5,6"/>
