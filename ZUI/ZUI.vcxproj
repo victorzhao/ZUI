@@ -233,6 +233,7 @@
     <ClInclude Include="layout\TabLayout.h" />
     <ClInclude Include="layout\TileLayout.h" />
     <ClInclude Include="layout\VerticalLayout.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="zlib\crc32.h" />
     <ClInclude Include="zlib\inffast.h" />
     <ClInclude Include="zlib\inffixed.h" />
@@ -245,7 +246,11 @@
     <ClInclude Include="ZUI.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="res.zip" />
     <None Include="Zui.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Zui.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
