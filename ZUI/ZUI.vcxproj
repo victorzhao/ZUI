@@ -83,7 +83,7 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</IntDir>
-    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir);$(SolutionDir)bin\vc6include\crt;$(SolutionDir)bin\vc6include\wnet</IncludePath>
     <LibraryPath>$(SolutionDir)/bin/vc6lib;$(SolutionDir)/bin</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,7 +130,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x0500;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <ExceptionHandling>false</ExceptionHandling>
@@ -141,6 +141,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -188,6 +189,7 @@
     <ClCompile Include="core\builder.c" />
     <ClCompile Include="core\carray.c" />
     <ClCompile Include="core\control.c" />
+    <ClCompile Include="core\duktape.c" />
     <ClCompile Include="core\function.c" />
     <ClCompile Include="core\gdi.c" />
     <ClCompile Include="core\global.c" />
@@ -196,7 +198,9 @@
     <ClCompile Include="core\resdb.c" />
     <ClCompile Include="core\string.c" />
     <ClCompile Include="core\tree.c" />
-    <ClCompile Include="debug.c" />
+    <ClCompile Include="debug.c">
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</WholeProgramOptimization>
+    </ClCompile>
     <ClCompile Include="layout\Layout.c" />
     <ClCompile Include="layout\HorizontalLayout.c" />
     <ClCompile Include="layout\TabLayout.c" />
@@ -220,6 +224,8 @@
     <ClInclude Include="core\builder.h" />
     <ClInclude Include="core\carray.h" />
     <ClInclude Include="core\control.h" />
+    <ClInclude Include="core\duktape.h" />
+    <ClInclude Include="core\duk_config.h" />
     <ClInclude Include="core\function.h" />
     <ClInclude Include="core\gdi.h" />
     <ClInclude Include="core\global.h" />
