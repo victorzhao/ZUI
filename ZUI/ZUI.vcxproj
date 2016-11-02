@@ -195,6 +195,7 @@
     <ClCompile Include="core\global.c" />
     <ClCompile Include="core\manager.c" />
     <ClCompile Include="core\mxml.c" />
+    <ClCompile Include="core\obj.c" />
     <ClCompile Include="core\resdb.c" />
     <ClCompile Include="core\string.c" />
     <ClCompile Include="core\tree.c" />
@@ -231,6 +232,7 @@
     <ClInclude Include="core\global.h" />
     <ClInclude Include="core\mxml.h" />
     <ClInclude Include="core\manager.h" />
+    <ClInclude Include="core\obj.h" />
     <ClInclude Include="core\resdb.h" />
     <ClInclude Include="core\string.h" />
     <ClInclude Include="core\tree.h" />
