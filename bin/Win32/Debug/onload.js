@@ -1,5 +1,4 @@
-﻿a("ok")
+﻿print("ok")
 function onclick(){
-	a("ok");
 	exit();
 }
