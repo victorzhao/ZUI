@@ -18,7 +18,7 @@
 		<Button text="前" width="28" tooltip="前进" padding="5,6,5,6"/>
 		<Button text="刷" width="28" tooltip="刷新" padding="5,6,5,6"/>
 		<Edit url="http://127.0.0.1/edit.html" padding="0,6,0,6"/>
-		<Button name="other" text="..." width="28" tooltip="菜单" padding="0,6,5,6"/>
+		<Button name="other" text="..." width="28" tooltip="菜单" padding="5,6,5,6"/>
 	</HorizontalLayout>
 	<AA height="1" bkcolor="#FFCCCCCC"/>
 	<TabLayout name="BrowserTab">
