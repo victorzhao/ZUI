@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
-<Template class="test">
+<Template class="WindowCtl" layout="horizontal" width="90" height="23">
+	<Button name="min" width="30" height="23" tooltip="最小化" normalimage="default:res/default/11.png" hotimage="default:res/default/12.png" pushedimage="default:res/default/13.png"/>
+	<Option name="max" width="30" height="23" tooltip="最大化" normalimage="default:res/default/5.png" hotimage="default:res/default/6.png" pushedimage="default:res/default/7.png" selectedimage="default:res/default/8.png" selectedhotimage="default:res/default/9.png" selectedpushedimage="default:res/default/10.png"/>
+	<Button name="clos" width="30" height="23" tooltip="关闭" normalimage="default:res/default/1.png" hotimage="default:res/default/2.png" pushedimage="default:res/default/3.png" onclick="onclick();"/>
 </Template>
+
 <Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" mininfo="360,210" size="600,500">
 	<LoadScript src="file:onload.js" type="js"/>
 
@@ -9,9 +13,7 @@
 		<HorizontalLayout name="BrowserTabHead" inset="8,0,30,0" drag="true">
 		
 		</HorizontalLayout>
-		<Button name="min" width="30" height="23" tooltip="最小化" normalimage="default:res/default/11.png" hotimage="default:res/default/12.png" pushedimage="default:res/default/13.png"/>
-		<Option name="max" width="30" height="23" tooltip="最大化" normalimage="default:res/default/5.png" hotimage="default:res/default/6.png" pushedimage="default:res/default/7.png" selectedimage="default:res/default/8.png" selectedhotimage="default:res/default/9.png" selectedpushedimage="default:res/default/10.png"/>
-		<Button name="clos" width="30" height="23" tooltip="关闭" normalimage="default:res/default/1.png" hotimage="default:res/default/2.png" pushedimage="default:res/default/3.png" onclick="onclick();"/>
+		<WindowCtl />
 	</HorizontalLayout>
 	<HorizontalLayout height="40" bkcolor="#FFF2F2F2">
 		<Button text="后" width="28" tooltip="后退" padding="5,6,5,6"/>
