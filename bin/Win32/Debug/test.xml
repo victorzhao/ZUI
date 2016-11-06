@@ -6,9 +6,6 @@
 </Template>
 
 <Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" mininfo="360,210" size="600,500">
-	<LoadScript src="file:onload.js" type="js"/>
-
-
 	<HorizontalLayout name="head" drag="true" height="32">
 		<HorizontalLayout name="BrowserTabHead" inset="8,0,30,0" drag="true">
 		
@@ -26,4 +23,5 @@
 	<TabLayout name="BrowserTab">
 		
 	</TabLayout>
+	<LoadScript src="file:onload.js" type="js"/>
 </Window>
