@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
-<Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" mininfo="800,500" size="600,500" name="window">
+<Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" mininfo="800,500" size="800,500" name="window">
 	<HorizontalLayout height="93">
 		<HorizontalLayout width="93" bkimage="file:user.jpg"/>
 		<VerticalLayout drag="true">
 			<HorizontalLayout bkcolor="#FFD1DDEF" name="head" drag="true" height="32">
 				<HorizontalLayout name="BrowserTabHead" inset="0,0,30,0" drag="true">
-				
-					<Option text="+" width="28" group="true" tooltip="创建新页面" padding="0,0,0,0"/>
+					<AA width="1" bkcolor="#FFB2BCCB"/>
+					<Option name="AddTab" text="+" width="28" group="true" tooltip="创建新页面" padding="0,0,0,0"/>
+					<AA width="1" bkcolor="#FFB2BCCB"/>
 				</HorizontalLayout>
 				<WindowCtl name="ctl"/>
 			</HorizontalLayout>
