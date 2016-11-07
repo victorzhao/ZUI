@@ -2,8 +2,8 @@
 var tool = GetByName("tool");
 var BrowserTabHead = GetByName("BrowserTabHead");
 var BrowserTab = GetByName("BrowserTab");
-GetByName("ctl").WindowCtl_clos.onclick="clos_onclick();";
-tool.other.onclick="other_onclick();"
+GetByName("ctl").WindowCtl_clos.onclick=function (a){exit();};
+tool.other.onclick=other_onclick;
 
 AddBrowserTab("http://www.baidu.com");
 
@@ -21,9 +21,7 @@ function AddBrowserTab(url){
 	
 	BrowserTab.selectitem=BrowserTab.GetItemIndex(Browser);
 }
-function other_onclick(){
+function other_onclick(c){
+	print(c.text);
 	print("aa");
-}
-function clos_onclick(){
-	exit();
 }

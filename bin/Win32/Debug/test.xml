@@ -14,7 +14,7 @@
 				<Button text="后" width="27" tooltip="后退" padding="5,3,0,0"/>
 				<Button text="前" width="27" tooltip="前进" padding="5,3,0,0"/>
 				<Button text="刷" width="27" tooltip="刷新" padding="5,3,0,0"/>
-				<Edit url="http://127.0.0.1/edit.html" padding="5,3,0,0"/>
+				<Edit padding="5,3,0,0"/>
 				<Button name="other" text="..." width="27" tooltip="菜单" padding="5,3,0,0"/>
 			</HorizontalLayout>
 			<HorizontalLayout bkcolor="#FFF4F8FF">
