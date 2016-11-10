@@ -1,30 +1,66 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
-<Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" mininfo="800,500" size="800,500" name="window">
-	<HorizontalLayout height="93">
-		<HorizontalLayout width="93" bkimage="file:user.jpg"/>
-		<VerticalLayout drag="true">
-			<HorizontalLayout bkcolor="#FFD1DDEF" name="head" drag="true" height="32">
-				<HorizontalLayout name="BrowserTabHead" inset="0,0,30,0" drag="true">
-					<AA width="1" bkcolor="#FFB2BCCB"/>
-					<Option name="AddTab" text="+" width="28" group="true" tooltip="创建新页面" padding="0,0,0,0"/>
-					<AA width="1" bkcolor="#FFB2BCCB"/>
+<Window nobox="true" layered="flase" opacity="255" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" mininfo="800,500" size="800,500" name="window">
+	<VerticalLayout height="97">
+		<HorizontalLayout height="68">
+			<VerticalLayout width="68"><!--头像区-->
+				<NULL height="32" bkcolor="#FFD1DDEF" drag="true"/>
+				<NULL height="36" bkcolor="#FFF4F8FF" />
+				<NULL name="user" tooltip="用户中心" bkimage="file:user.jpg" bordercolor="#FF2A8BD7" float="true" pos="7,7,54,54"/>
+			</VerticalLayout>
+			<VerticalLayout drag="true">
+				<HorizontalLayout bkcolor="#FFD1DDEF" name="head" drag="true" height="32"><!--选择夹头-->
+					<HorizontalLayout name="BrowserTabHead" inset="0,0,30,0" drag="true">
+						<NULL width="1" bkcolor="#FFB2BCCB"/>
+						<NULL name="AddTab" text="+" width="28" tooltip="创建新页面" padding="0,0,0,0"/>
+						<NULL width="1" bkcolor="#FFB2BCCB"/>
+					</HorizontalLayout>
+					<WindowCtl name="ctl"/>
 				</HorizontalLayout>
-				<WindowCtl name="ctl"/>
+				<HorizontalLayout name="tool" height="36" bkcolor="#FFF4F8FF"><!--游览控制区-->
+					<Button width="26" height="26" tooltip="后退" bkimage="file:back.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Button width="26" height="26" tooltip="前进" bkimage="file:next.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Button width="26" height="26" tooltip="刷新" bkimage="file:back.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Edit height="26" padding="5,6,0,4"/>
+					<Button name="other1" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="菜单" padding="5,6,0,4"/>
+					<Button name="other2" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="菜单" padding="5,6,0,4"/>
+					<Button name="other" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="菜单" padding="5,6,0,4"/>
+				</HorizontalLayout>			
+			</VerticalLayout>
+		</HorizontalLayout>
+		<NULL height="1" bkcolor="#FFB2BCCB"/>
+		<HorizontalLayout bkcolor="#FFF4F8FF">
+			<Button width="23" tooltip="添加书签" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,2,0,3"/>
+			<HorizontalLayout><!--书签列表-->
 			</HorizontalLayout>
-			<HorizontalLayout name="tool" height="30" bkcolor="#FFF4F8FF">
-				<Button text="后" width="27" tooltip="后退" padding="5,3,0,0"/>
-				<Button text="前" width="27" tooltip="前进" padding="5,3,0,0"/>
-				<Button text="刷" width="27" tooltip="刷新" padding="5,3,0,0"/>
-				<Edit padding="5,3,0,0"/>
-				<Button name="other" text="..." width="27" tooltip="菜单" padding="5,3,0,0"/>
+			<NULL width="1" bkcolor="#FFB2BCCB"/>
+			<HorizontalLayout width="179"><!--迷你播放器-->
+				<Button width="23" height="23" normalimage="file:music_back.png:type='img':src='0,0,23,23'" hotimage="file:music_back.png:type='img':src='23,0,23,23'" pushedimage="file:music_back.png:type='img':src='46,0,23,23'" tooltip="上一曲" padding="5,2,0,3"/>
+				<Option width="23" height="23" normalimage="file:music_play.png:type='img':src='0,0,23,23'" hotimage="file:music_play.png:type='img':src='23,0,23,23'" pushedimage="file:music_play.png:type='img':src='46,0,23,23'" selectedimage="file:music_play.png:type='img':src='92,0,23,23'" selectedhotimage="file:music_play.png:type='img':src='115,0,23,23'" selectedpushedimage="file:music_play.png:type='img':src='138,0,23,23'" tooltip="播放" padding="5,2,0,3"/>
+				<Button width="23" height="23" normalimage="file:music_next.png:type='img':src='0,0,23,23'" hotimage="file:music_next.png:type='img':src='23,0,23,23'" pushedimage="file:music_next.png:type='img':src='46,0,23,23'" tooltip="下一曲" padding="5,2,5,3"/>
+				<NULL width="1" bkcolor="#FFB2BCCB"/>
+				<NULL name="Play_FFT" width="80" height="23" padding="5,2,5,3"/>
 			</HorizontalLayout>
-			<HorizontalLayout bkcolor="#FFF4F8FF">
-			</HorizontalLayout>			
-		</VerticalLayout>
-	</HorizontalLayout>
-	<AA height="1" bkcolor="#FFD0D3D9"/>
+		</HorizontalLayout>
+	</VerticalLayout>
+	<NULL height="1" bkcolor="#FFD0D3D9"/>
 	<TabLayout name="BrowserTab">
-		
+	
+		<VerticalLayout bkcolor="#FFFFFFFF"><!--默认页-->
+			<Label text="默认页"/>
+		</VerticalLayout>
+		<VerticalLayout bkcolor="#FFFFFFFF"><!--用户中心页-->
+			<Label text="用户中心"/>
+		</VerticalLayout>
+		<VerticalLayout name="Play" bkcolor="#FFFFFFFF"><!--播放器页-->
+			<VerticalLayout bkcolor="#FFFFFFFF"><!--信息区-->
+				
+			</VerticalLayout>
+			<HorizontalLayout bkcolor="#FFFFFFFF"><!--控制区-->
+				<Button width="28" tooltip="上一曲" padding="5,4,0,4"/>
+				<Button width="28" tooltip="播放" padding="5,4,0,4"/>
+				<Button width="28" tooltip="下一曲" padding="5,4,0,4"/>
+			</HorizontalLayout>
+		</VerticalLayout>
 	</TabLayout>
 	<LoadScript src="file:onload.js" type="js"/>
 </Window>
