@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
-<Window nobox="true" layered="flase" opacity="255" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" mininfo="800,500" size="800,500" name="window">
+<Window nobox="true" layered="flase" opacity="255" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" text="Z游览器" mininfo="800,500" size="800,500" name="window">
 	<VerticalLayout height="97">
 		<HorizontalLayout height="68">
 			<VerticalLayout width="68"><!--头像区-->
