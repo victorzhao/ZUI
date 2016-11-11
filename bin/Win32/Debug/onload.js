@@ -2,6 +2,7 @@
 var tool = GetByName("tool");//取工具条对象
 var BrowserTabHead = GetByName("BrowserTabHead");//取游览框选择夹头部对象
 var BrowserTab = GetByName("BrowserTab");//取游览框选择夹对象
+var UrlEdit = GetByName("UrlEdit");//取地址框选择夹对象
 var BrowserTabSelectIndex=1;//当前选择的选择夹
 
 GetByName("ctl").WindowCtl_clos.onclick=function (c){exit();};//设置关闭按钮回调
@@ -94,6 +95,10 @@ function AddBrowserTab(url){
 		print("aa");
 		BrowserTabHead.GetItemAt(BrowserTab.GetItemIndex(c)*2+1).title.text=t;
 	};//标题被改变事件	
+	Browser.urlchanged=function (c,u){
+		print("aa");
+		UrlEdit.text=u;
+	};//url被改变事件
 	BrowserTab.AddAt(Browser,BrowserTab.count-3);
 	BrowserTabSelect(BrowserTab.count-3);
 	//BrowserTab.selectitem=BrowserTab.GetItemIndex(Browser);

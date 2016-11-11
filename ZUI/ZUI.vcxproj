@@ -191,7 +191,6 @@
     <ClCompile Include="core\agg.cpp" />
     <ClCompile Include="core\agg\agg_font_win32_tt.cpp" />
     <ClCompile Include="core\agg\src\agg_curves.cpp" />
-    <ClCompile Include="core\agg\src\agg_gsv_text.cpp" />
     <ClCompile Include="core\agg\src\agg_trans_affine.cpp" />
     <ClCompile Include="core\agg\src\agg_vcgen_stroke.cpp" />
     <ClCompile Include="core\builder.c" />
