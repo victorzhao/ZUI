@@ -11,7 +11,7 @@
 				<HorizontalLayout bkcolor="#FFD1DDEF" name="head" drag="true" height="32"><!--选择夹头-->
 					<HorizontalLayout name="BrowserTabHead" inset="0,0,30,0" drag="true">
 						<NULL width="1" bkcolor="#FFB2BCCB"/>
-						<NULL name="AddTab" text="+" width="28" tooltip="创建新页面" padding="0,0,0,0"/>
+						<NULL name="AddTab" text="+" width="28" bkimage="file:add.png" tooltip="创建新页面" padding="0,0,0,0"/>
 						<NULL width="1" bkcolor="#FFB2BCCB"/>
 					</HorizontalLayout>
 					<WindowCtl name="ctl"/>
