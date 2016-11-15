@@ -18,9 +18,9 @@
 				</HorizontalLayout>
 				<HorizontalLayout name="tool" height="36" bkcolor="#FFF4F8FF"><!--游览控制区-->
 					<Button width="26" height="26" tooltip="后退" bkimage="file:res/res/1.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
-					<Button width="26" height="26" name="ctl_home" tooltip="主页" bkimage="file:next.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
-					<Button width="26" height="26" tooltip="刷新" bkimage="file:back.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
-					<Button width="26" height="26" tooltip="收藏" bkimage="file:back.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Button width="26" height="26" name="ctl_home" tooltip="主页" bkimage="file:res/res/2.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Option width="26" height="26" tooltip="刷新" bkimage="file:res/res/3.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Button width="26" height="26" tooltip="收藏" bkimage="file:res/res/5.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
 					<Edit name="UrlEdit" height="26" padding="5,6,0,4"/>
 					<Button name="other1" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="开发者工具" padding="5,6,0,4"/>
 					<Button name="other2" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="音乐" padding="5,6,0,4"/>
