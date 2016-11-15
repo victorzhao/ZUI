@@ -87,7 +87,6 @@ function AddBrowserTab(url){
 	TabHead.Add(img);
 	var title = new Control("Label");
 	title.name="title";//设置名字,方便直接以成员方式操作
-	title.text="aa "
 	TabHead.Add(title);
 	var clos = new Control("Button");
 	clos.width=16;

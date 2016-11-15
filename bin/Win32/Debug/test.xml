@@ -24,7 +24,7 @@
 					<Edit name="UrlEdit" height="26" padding="5,6,0,4"/>
 					<Button name="other1" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="开发者工具" padding="5,6,0,4"/>
 					<Button name="other2" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="音乐" padding="5,6,0,4"/>
-					<Button name="other" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="菜单" padding="5,6,0,4"/>
+					<Button name="other" width="26" height="26" bkimage="file:res/res/8.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="菜单" padding="5,6,0,4"/>
 				</HorizontalLayout>			
 			</VerticalLayout>
 		</HorizontalLayout>
@@ -47,7 +47,7 @@
 	<TabLayout name="BrowserTab">
 	
 		<VerticalLayout bkcolor="#FFFFFFFF"><!--默认页-->
-			<Label text="默认页"/>
+			<Browser text="默认页" html="file:res/default.html"/>
 		</VerticalLayout>
 		<VerticalLayout bkcolor="#FFFFFFFF"><!--用户中心页-->
 			<Label text="用户中心"/>
