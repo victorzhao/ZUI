@@ -3,8 +3,10 @@ var tool = GetByName("tool");//取工具条对象
 var BrowserTabHead = GetByName("BrowserTabHead");//取游览框选择夹头部对象
 var BrowserTab = GetByName("BrowserTab");//取游览框选择夹对象
 var UrlEdit = GetByName("UrlEdit");//取地址框选择夹对象
+var bookmark = GetByName("bookmark");//书签栏
 var BrowserTabSelectIndex=1;//当前选择的选择夹
-
+var otherlayout=LayoutLoad("file:other.xml");
+var downloadlayout=LayoutLoad("file:download.xml");
 GetByName("ctl").WindowCtl_clos.onclick=function (c){exit();};//设置关闭按钮回调
 
 tool.other.onclick=other_onclick;//
@@ -13,9 +15,36 @@ BrowserTabHead.AddTab.onmouseenter=tabhead_onmouseenter;
 BrowserTabHead.AddTab.onmouseleave=tabhead_onmouseleave;
 BrowserTabHead.AddTab.onclick=tabhead_onclick;
 	
-AddBrowserTab("http://www.baidu.com");//添加默认标签
+//AddBrowserTab("http://www.baidu.com");//添加默认标签
 //AddBrowserTab("http://127.0.0.1");//添加默认标签
 
+GetByName("书签").onclick=function (c){
+	
+};
+GetByName("ctl_home").onclick=function (c){
+	if(BrowserTab.count==3){
+			//创建新页面
+		AddBrowserTab("www.baidu.com");
+	}else{
+		//在当前页面打开
+		if(BrowserTabSelectIndex<BrowserTab.count-2){
+			BrowserTab.GetItemAt(BrowserTabSelectIndex-1).url="www.baidu.com";
+		}
+	}
+};
+UrlEdit.onchar = function(c,ch){
+	if(ch=='\r'){//回车键
+		if(BrowserTab.count==3){
+			//创建新页面
+			AddBrowserTab(c.text);
+		}else{
+			//在当前页面打开
+			if(BrowserTabSelectIndex<BrowserTab.count-2){
+				BrowserTab.GetItemAt(BrowserTabSelectIndex-1).url=c.text;
+			}
+		}
+	}
+}
 
 GetByName("user").onclick=BrowserTabUserPage;//设置用户按钮回调
 tool.other2.onclick=BrowserTabMusicPage;
@@ -122,7 +151,5 @@ function tabhead_onclick(c){
 	}
 };//鼠标单击事件
 function other_onclick(c){
-	print(c.text);
-	print("aa");
-	print("a"+1);
+	otherlayout.Popup();
 }

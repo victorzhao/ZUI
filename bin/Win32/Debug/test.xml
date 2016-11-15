@@ -11,26 +11,27 @@
 				<HorizontalLayout bkcolor="#FFD1DDEF" name="head" drag="true" height="32"><!--选择夹头-->
 					<HorizontalLayout name="BrowserTabHead" inset="0,0,30,0" drag="true">
 						<NULL width="1" bkcolor="#FFB2BCCB"/>
-						<NULL name="AddTab" text="+" width="28" bkimage="file:add.png" tooltip="创建新页面" padding="0,0,0,0"/>
+						<NULL name="AddTab" text="+" width="33" bkcolor="FFF4F8FF" bkimage="file:res/res/29.png" tooltip="创建新页面" padding="0,0,0,0"/>
 						<NULL width="1" bkcolor="#FFB2BCCB"/>
 					</HorizontalLayout>
 					<WindowCtl name="ctl"/>
 				</HorizontalLayout>
 				<HorizontalLayout name="tool" height="36" bkcolor="#FFF4F8FF"><!--游览控制区-->
-					<Button width="26" height="26" tooltip="后退" bkimage="file:back.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
-					<Button width="26" height="26" tooltip="前进" bkimage="file:next.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Button width="26" height="26" tooltip="后退" bkimage="file:res/res/1.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Button width="26" height="26" name="ctl_home" tooltip="主页" bkimage="file:next.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
 					<Button width="26" height="26" tooltip="刷新" bkimage="file:back.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
+					<Button width="26" height="26" tooltip="收藏" bkimage="file:back.png" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,6,0,4"/>
 					<Edit name="UrlEdit" height="26" padding="5,6,0,4"/>
-					<Button name="other1" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="菜单" padding="5,6,0,4"/>
-					<Button name="other2" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="菜单" padding="5,6,0,4"/>
+					<Button name="other1" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="开发者工具" padding="5,6,0,4"/>
+					<Button name="other2" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="音乐" padding="5,6,0,4"/>
 					<Button name="other" text="..." width="26" height="26" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" tooltip="菜单" padding="5,6,0,4"/>
 				</HorizontalLayout>			
 			</VerticalLayout>
 		</HorizontalLayout>
 		<NULL height="1" bkcolor="#FFB2BCCB"/>
 		<HorizontalLayout bkcolor="#FFF4F8FF">
-			<Button width="23" tooltip="添加书签" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,2,0,3"/>
-			<HorizontalLayout><!--书签列表-->
+			<Button width="23" tooltip="书签" name="书签" normalimage="file:bt_bk.png:type='img':src='0,0,26,24'" hotimage="file:bt_bk.png:type='img':src='0,24,26,24'" pushedimage="file:bt_bk.png:type='img':src='0,48,26,24'" padding="5,2,0,3"/>
+			<HorizontalLayout name="bookmark"><!--书签列表-->
 			</HorizontalLayout>
 			<NULL width="1" bkcolor="#FFB2BCCB"/>
 			<HorizontalLayout width="179"><!--迷你播放器-->
