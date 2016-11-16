@@ -22,7 +22,7 @@ GetByName("书签").onclick=function (c){
 	
 };
 GetByName("ctl_home").onclick=function (c){
-	if(BrowserTab.count==3){
+	if(BrowserTab.count==3 || BrowserTab.count-2 == BrowserTabSelectIndex){
 			//创建新页面
 		AddBrowserTab("www.baidu.com");
 	}else{
@@ -98,10 +98,10 @@ function AddBrowserTab(url){
 	clos.onclick=function(c){
 		var a=c.parent;
 		var i =BrowserTabHead.GetItemIndex(a);
-		BrowserTab.GetItemAt(i/2).clos();
 		BrowserTabHead.GetItemAt(i+1).clos();
 		c.parent.clos();
-		BrowserTabSelect(i);
+		BrowserTab.GetItemAt((i-1)/2).clos();
+		BrowserTabSelect(i-1);
 	}//关闭标签
 	TabHead.Add(clos);
 	
