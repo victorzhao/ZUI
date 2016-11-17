@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="gbk"?>
+<Window nobox="true" vscrollbar="true" hscrollbar="true" bordercolor="#FF2A8BD7" bkcolor="#FFEEEEEE" size="200,320">
+	<Button text="历史" height="26" width="500" tooltip="后退"/>
+	<Button text="下载管理器" height="26" tooltip="前进"/>
+	<Button text="设置" height="26" tooltip="刷新"/>
+	<Button text="帮助" height="26" tooltip="后退"/>
+	<Button text="消息中心" height="26" tooltip="后退"/>
+	<Button text="关于.." height="26" tooltip="前进"/>
+		<Button text="历史" height="26" tooltip="后退"/>
+	<Button text="下载管理器" height="26" tooltip="前进"/>
+	<Button text="设置" height="26" tooltip="刷新"/>
+	<Button text="帮助" height="26" tooltip="后退"/>
+	<Button text="消息中心" height="26" tooltip="后退"/>
+	<Button text="关于.." height="26" tooltip="前进"/>
+		<Button text="历史" height="26" tooltip="后退"/>
+	<Button text="下载管理器" height="26" tooltip="前进"/>
+	<Button text="设置" height="26" tooltip="刷新"/>
+	<Button text="帮助" height="26" tooltip="后退"/>
+	<Button text="消息中心" height="26" tooltip="后退"/>
+	<Button text="关于.." height="26" tooltip="前进"/>
+		<Button text="历史" height="26" tooltip="后退"/>
+	<Button text="下载管理器" height="26" tooltip="前进"/>
+	<Button text="设置" height="26" tooltip="刷新"/>
+	<Button text="帮助" height="26" tooltip="后退"/>
+	<Button text="消息中心" height="26" tooltip="后退"/>
+	<Button text="关于.." height="26" tooltip="前进"/>
+</Window>

@@ -7,6 +7,7 @@ var bookmark = GetByName("bookmark");//书签栏
 var BrowserTabSelectIndex=1;//当前选择的选择夹
 var otherlayout=LayoutLoad("file:other.xml");
 var downloadlayout=LayoutLoad("file:download.xml");
+LayoutLoad("file:scrollbartest.xml");
 GetByName("ctl").WindowCtl_clos.onclick=function (c){exit();};//设置关闭按钮回调
 
 tool.other.onclick=other_onclick;//

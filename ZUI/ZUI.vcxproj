@@ -189,7 +189,6 @@
     <ClCompile Include="control\Button.c" />
     <ClCompile Include="control\ScrollBar.c" />
     <ClCompile Include="control\Window.c" />
-    <ClCompile Include="core\agg.cpp" />
     <ClCompile Include="core\agg\agg_font_win32_tt.cpp" />
     <ClCompile Include="core\agg\src\agg_curves.cpp" />
     <ClCompile Include="core\agg\src\agg_trans_affine.cpp" />
@@ -198,6 +197,7 @@
     <ClCompile Include="core\carray.c" />
     <ClCompile Include="core\control.c" />
     <ClCompile Include="core\function.c" />
+    <ClCompile Include="core\gdi.c" />
     <ClCompile Include="core\global.c" />
     <ClCompile Include="core\manager.c" />
     <ClCompile Include="core\mxml.c" />
