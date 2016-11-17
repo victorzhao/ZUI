@@ -150,5 +150,6 @@ function tabhead_onclick(c){
 	}
 };//鼠标单击事件
 function other_onclick(c){
-	otherlayout.Popup();
+	var pt=ClientToScreen(c,{x:c.rect.right,y:c.rect.bottom+2});
+	otherlayout.Popup(pt.x-otherlayout.width,pt.y);
 }

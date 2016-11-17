@@ -187,6 +187,7 @@
     <ClCompile Include="control\Option.c" />
     <ClCompile Include="control\Register.c" />
     <ClCompile Include="control\Button.c" />
+    <ClCompile Include="control\ScrollBar.c" />
     <ClCompile Include="control\Window.c" />
     <ClCompile Include="core\agg.cpp" />
     <ClCompile Include="core\agg\agg_font_win32_tt.cpp" />
@@ -254,6 +255,7 @@
     <ClInclude Include="control\Option.h" />
     <ClInclude Include="control\Register.h" />
     <ClInclude Include="control\Button.h" />
+    <ClInclude Include="control\ScrollBar.h" />
     <ClInclude Include="control\Window.h" />
     <ClInclude Include="core\builder.h" />
     <ClInclude Include="core\carray.h" />
