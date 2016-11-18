@@ -1,36 +1,43 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
-<Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" text="ZuiDesigner" mininfo="800,580" size="800,580" name="window">
-	<VerticalLayout height="57"><!--头部-->
-		<VerticalLayout drag="true" height="28">
-			<HorizontalLayout bkcolor="#FFD1DDEF" name="head" drag="true"><!--标题栏-->
+<Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FF293955" text="ZuiDesigner" mininfo="800,580" size="800,580" name="window">
+	<VerticalLayout height="80" bkcolor="#FFD6DBE9"><!--头部-->
+		<VerticalLayout drag="true" height="30">
+			<HorizontalLayout name="head" drag="true"><!--标题栏-->
 				<HorizontalLayout name="Title" inset="0,0,28,0" drag="true">
 				</HorizontalLayout>
 				<WindowCtl name="ctl"/>
 			</HorizontalLayout>	
 		</VerticalLayout>
-		<NULL height="1" bkcolor="#FFB2BCCB"/>
-		<HorizontalLayout bkcolor="#FFD1DDEF"><!--菜单区-->
+		<HorizontalLayout height="25"><!--菜单区-->
+		
+		</HorizontalLayout>
+		<HorizontalLayout height="25"><!--工具区-->
 		
 		</HorizontalLayout>
 	</VerticalLayout>
-	<NULL height="1" bkcolor="#FFD0D3D9"/>
+	<NULL height="3" bkcolor="#FF293955"/>
 	<HorizontalLayout><!--功能区-->
-		<VerticalLayout width="100" bkcolor="#FFD0D3D9"><!--属性区-->
+		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="120"><!--属性区-->
 		
 		</VerticalLayout>
-		<VerticalLayout><!--设计区-->
-			<TabLayout>
-				
-			</TabLayout>
-			<HorizontalLayout height="36">
-				
+		<SplitterBar width="3" bkcolor="#FF293955"/>
+		<VerticalLayout bkcolor="#FF293A56" name="design"><!--设计区-->
+			<HorizontalLayout height="22" name="designtabhead">
+
 			</HorizontalLayout>
+			<NULL height="2" bkcolor="#FFFFF29D"/>
+			<NULL height="1" bkcolor="#FFBDC5D8"/>
+			<TabLayout name="designtab">
+
+			</TabLayout>
 		</VerticalLayout>
-		<VerticalLayout width="100" bkcolor="#FFD0D3D9"><!--工具区-->
+		<SplitterBar width="3" bkcolor="#FF293955"/>
+		<VerticalLayout bkcolor="#FFD0D3D9"><!--工具区-->
 		
 		</VerticalLayout>	
 	</HorizontalLayout>
-	<VerticalLayout height="120"><!--信息区-->
+	<SplitterBar height="3" bkcolor="#FF293955"/>
+	<VerticalLayout bkcolor="#FFD0D0D9" height="120"><!--信息区-->
 		<TabLayout>
 				
 		</TabLayout>

@@ -160,6 +160,8 @@
     <ClCompile Include="..\ZUI\control\Option.c" />
     <ClCompile Include="..\ZUI\control\Register.c" />
     <ClCompile Include="..\ZUI\control\ScrollBar.c" />
+    <ClCompile Include="..\ZUI\control\SplitterBar.c" />
+    <ClCompile Include="..\ZUI\control\Virtual.c" />
     <ClCompile Include="..\ZUI\control\Window.c" />
     <ClCompile Include="..\ZUI\core\builder.c" />
     <ClCompile Include="..\ZUI\core\carray.c" />
@@ -211,10 +213,14 @@
     <ClCompile Include="..\ZUI\zlib\inftrees.c" />
     <ClCompile Include="..\ZUI\zlib\unzip.c" />
     <ClCompile Include="..\ZUI\zlib\zutil.c" />
+    <ClCompile Include="CodeEdit.c" />
     <ClCompile Include="Designer.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\ZUI\Zui.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CodeEdit.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

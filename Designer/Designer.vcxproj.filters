@@ -210,10 +210,24 @@
     <ClCompile Include="Designer.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="CodeEdit.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZUI\control\Virtual.c">
+      <Filter>源文件\ZUI\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZUI\control\SplitterBar.c">
+      <Filter>源文件\ZUI\control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\ZUI\Zui.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CodeEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
