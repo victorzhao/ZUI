@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="gbk"?>
+<Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FFCCCCCC" text="ZuiDesigner" mininfo="800,580" size="800,580" name="window">
+	<VerticalLayout height="57"><!--头部-->
+		<VerticalLayout drag="true" height="28">
+			<HorizontalLayout bkcolor="#FFD1DDEF" name="head" drag="true"><!--标题栏-->
+				<HorizontalLayout name="Title" inset="0,0,28,0" drag="true">
+				</HorizontalLayout>
+				<WindowCtl name="ctl"/>
+			</HorizontalLayout>	
+		</VerticalLayout>
+		<NULL height="1" bkcolor="#FFB2BCCB"/>
+		<HorizontalLayout bkcolor="#FFD1DDEF"><!--菜单区-->
+		
+		</HorizontalLayout>
+	</VerticalLayout>
+	<NULL height="1" bkcolor="#FFD0D3D9"/>
+	<HorizontalLayout><!--功能区-->
+		<VerticalLayout width="100" bkcolor="#FFD0D3D9"><!--属性区-->
+		
+		</VerticalLayout>
+		<VerticalLayout><!--设计区-->
+			<TabLayout>
+				
+			</TabLayout>
+			<HorizontalLayout height="36">
+				
+			</HorizontalLayout>
+		</VerticalLayout>
+		<VerticalLayout width="100" bkcolor="#FFD0D3D9"><!--工具区-->
+		
+		</VerticalLayout>	
+	</HorizontalLayout>
+	<VerticalLayout height="120"><!--信息区-->
+		<TabLayout>
+				
+		</TabLayout>
+		<HorizontalLayout height="36">
+				
+		</HorizontalLayout>
+	</VerticalLayout>
+	<LoadScript src="file:Designer_onload.js" type="js"/>
+</Window>
