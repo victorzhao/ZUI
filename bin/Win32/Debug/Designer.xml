@@ -17,7 +17,7 @@
 	</VerticalLayout>
 	<NULL height="3" bkcolor="#FF293955"/>
 	<HorizontalLayout><!--功能区-->
-		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="120"><!--属性区-->
+		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="120" width="120"><!--属性区-->
 		
 		</VerticalLayout>
 		<SplitterBar width="3" bkcolor="#FF293955"/>
@@ -28,11 +28,11 @@
 			<NULL height="2" bkcolor="#FFFFF29D"/>
 			<NULL height="1" bkcolor="#FFBDC5D8"/>
 			<TabLayout name="designtab">
-
+				<Browser name="default_page" html="file:res/default.html"/>
 			</TabLayout>
 		</VerticalLayout>
 		<SplitterBar width="3" bkcolor="#FF293955"/>
-		<VerticalLayout bkcolor="#FFD0D3D9"><!--工具区-->
+		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="120" width="120"><!--工具区-->
 		
 		</VerticalLayout>	
 	</HorizontalLayout>

@@ -6,7 +6,8 @@ var DesignTabSelectIndex=1;//当前选择的选择夹
 GetByName("ctl").WindowCtl_clos.onclick=function (c){exit();};//设置关闭按钮回调
 
 AddDesignTab();
-AddDesignTab();
+//AddDesignTab();
+
 function DesignTabSelect(Index){
 	var old = DesignTabHead.GetItemAt(DesignTabSelectIndex);
 	if(old)
@@ -14,8 +15,8 @@ function DesignTabSelect(Index){
 	var c = DesignTabHead.GetItemAt(Index-1);
 	c.bkcolor=0xFFFFF29D;
 	c.closbut.visible=true;
-	BrowserTabSelectIndex=Index;
-	DesignTabSelect.selectitem=Index;
+	DesignTabSelectIndex=Index;
+	DesignTab.selectitem=Index;
 }
 function AddDesignTab(){
 	var TabHead = new Control("HorizontalLayout");
@@ -45,12 +46,11 @@ function AddDesignTab(){
 	clos.pushedimage="file:clos.png:type='img':src='0,36,18,18'"
 	clos.name="closbut";
 	clos.onclick=function(c){
-		//var a=c.parent;
-		//var i =BrowserTabHead.GetItemIndex(a);
-		//BrowserTabHead.GetItemAt(i+1).clos();
-		//c.parent.clos();
-		//BrowserTab.GetItemAt((i-1)/2).clos();
-		//BrowserTabSelect(i-1);
+		var a=c.parent;
+		var i =DesignTabHead.GetItemIndex(a);
+		c.parent.clos();
+		DesignTab.GetItemAt(i+1).clos();
+		DesignTabSelect(i);
 	}//关闭标签
 	clos.visible=false;
 	TabHead.Add(clos);
@@ -59,7 +59,7 @@ function AddDesignTab(){
 	
 	
 	var Edit = new Control("CodeEdit");
-	DesignTab.AddAt(Edit,DesignTab.count);
-	DesignTabSelect(DesignTab.count);
+	DesignTab.Add(Edit);
+	DesignTabSelect(DesignTab.count-1);
 	return Edit;
 }
