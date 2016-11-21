@@ -18,7 +18,12 @@
 	<NULL height="3" bkcolor="#FF293955"/>
 	<HorizontalLayout><!--功能区-->
 		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="120" width="120"><!--属性区-->
-		
+			<TabLayout name="atttab">
+
+			</TabLayout>
+			<HorizontalLayout height="22" name="atttabhead">
+
+			</HorizontalLayout>
 		</VerticalLayout>
 		<SplitterBar width="3" bkcolor="#FF293955"/>
 		<VerticalLayout bkcolor="#FF293A56" name="design"><!--设计区-->
@@ -28,12 +33,17 @@
 			<NULL height="2" bkcolor="#FFFFF29D"/>
 			<NULL height="1" bkcolor="#FFBDC5D8"/>
 			<TabLayout name="designtab">
-				<Browser name="default_page" html="file:res/default.html"/>
+
 			</TabLayout>
 		</VerticalLayout>
 		<SplitterBar width="3" bkcolor="#FF293955"/>
 		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="120" width="120"><!--工具区-->
-		
+			<TabLayout name="tooltab">
+
+			</TabLayout>
+			<HorizontalLayout height="22" name="tooltabhead">
+
+			</HorizontalLayout>
 		</VerticalLayout>	
 	</HorizontalLayout>
 	<SplitterBar height="3" bkcolor="#FF293955"/>
