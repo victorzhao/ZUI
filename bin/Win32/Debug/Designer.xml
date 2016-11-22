@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
-<Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FF293955" text="ZuiDesigner" mininfo="800,580" size="800,580" name="window">
+<Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FF293955" text="ZuiDesigner" mininfo="800,580" size="1024,768" name="window">
 	<VerticalLayout height="80" bkcolor="#FFD6DBE9"><!--头部-->
 		<VerticalLayout drag="true" height="30">
 			<HorizontalLayout name="head" drag="true"><!--标题栏-->
@@ -17,12 +17,14 @@
 	</VerticalLayout>
 	<NULL height="3" bkcolor="#FF293955"/>
 	<HorizontalLayout><!--功能区-->
-		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="120" width="120"><!--属性区-->
-			<TabLayout name="atttab">
-
+		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="180" width="180"><!--属性区-->
+			<TabLayout name="atttab" bkcolor="#FFFFFFFF">
+				<NULL height="3" bkcolor="#FF293955"/>
+				<NULL height="3" bkcolor="#FF293955"/>
 			</TabLayout>
-			<HorizontalLayout height="22" name="atttabhead">
-
+			<HorizontalLayout height="22" name="atttabhead" bkcolor="#FF293955">
+				<Label text="工程" name="工程" bkcolor="#FFFFFFFF"/>
+				<Label text="属性" name="属性" bkcolor="#FF4D6082"/>
 			</HorizontalLayout>
 		</VerticalLayout>
 		<SplitterBar width="3" bkcolor="#FF293955"/>
@@ -37,11 +39,11 @@
 			</TabLayout>
 		</VerticalLayout>
 		<SplitterBar width="3" bkcolor="#FF293955"/>
-		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="120" width="120"><!--工具区-->
+		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="180" width="180"><!--工具区-->
 			<TabLayout name="tooltab">
 
 			</TabLayout>
-			<HorizontalLayout height="22" name="tooltabhead">
+			<HorizontalLayout height="22" name="tooltabhead" bkcolor="#FF293955">
 
 			</HorizontalLayout>
 		</VerticalLayout>	

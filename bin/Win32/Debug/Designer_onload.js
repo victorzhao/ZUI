@@ -12,11 +12,13 @@ function DesignTabSelect(Index){
 	if(old){
 		old.bkcolor=0;
 		old.closbut.visible=false;
+		old.tit.padding="0,0,11,0";
 	}
 	var c = DesignTabHead.GetItemAt(Index-1);
 	if(c){
 		c.bkcolor=0xFFFFF29D;
 		c.closbut.visible=true;
+		c.tit.padding="0,0,0,0";
 	}
 	DesignTabSelectIndex=Index;
 	DesignTab.selectitem=Index-1;
@@ -30,12 +32,14 @@ function AddDesignTab(){
 		if(DesignTabHead.GetItemIndex(c)+1!=DesignTabSelectIndex){
 			c.bkcolor=0xFF5B7199;
 			c.closbut.visible=true;
+			c.tit.padding="0,0,0,0";
 		}
 	};
 	TabHead.onmouseleave=function(c){
 		if(DesignTabHead.GetItemIndex(c)+1!=DesignTabSelectIndex){
 			c.bkcolor=0;
 			c.closbut.visible=false;
+			c.tit.padding="0,0,11,0";
 		}	
 	};
 	TabHead.onclick=function(c){
@@ -47,7 +51,8 @@ function AddDesignTab(){
 	
 
 	var title = new Control("Label");
-	title.name="title";//设置名字,方便直接以成员方式操作
+	title.name="tit";//设置名字,方便直接以成员方式操作
+	title.text="a.xml"
 	TabHead.Add(title);
 	var clos = new Control("Button");
 	clos.width=16;
@@ -80,7 +85,44 @@ function AddDesignTab(){
 
 
 //------------属性区
-
+var AttTabSelectIndex=1;//当前选择的选择夹
+//挂接事件
+var atttabhead=GetByName("atttabhead");
+var atttab=GetByName("atttab");
+atttabhead.工程.onmouseenter=atttabheadonmouseenter;
+atttabhead.工程.onmouseleave=atttabheadonmouseleave;
+atttabhead.工程.onclick=atttabheadonclick;
+atttabhead.属性.onmouseenter=atttabheadonmouseenter;
+atttabhead.属性.onmouseleave=atttabheadonmouseleave;
+atttabhead.属性.onclick=atttabheadonclick;
+function atttabheadonmouseenter(c){
+	if(atttabhead.GetItemIndex(c)+1!=AttTabSelectIndex){
+		c.bkcolor=0xFF5B7199;
+	}
+};
+function atttabheadonmouseleave(c){
+	if(atttabhead.GetItemIndex(c)+1!=AttTabSelectIndex){
+		c.bkcolor=0;
+	}	
+};
+function atttabheadonclick(c){
+	var Index=atttabhead.GetItemIndex(c)+1;
+	if(Index!=AttTabSelectIndex){
+		AttTabSelect(Index);
+	}
+};
+function AttTabSelect(Index){
+	var old = atttabhead.GetItemAt(AttTabSelectIndex-1);
+	if(old){
+		old.bkcolor=0;
+	}
+	var c = atttabhead.GetItemAt(Index-1);
+	if(c){
+		c.bkcolor=0xFFFFFFFF;
+	}
+	AttTabSelectIndex=Index;
+	atttab.selectitem=Index-1;
+}
 
 
 //------------工具区

@@ -219,6 +219,12 @@
     <ClCompile Include="..\ZUI\control\SplitterBar.c">
       <Filter>源文件\ZUI\control</Filter>
     </ClCompile>
+    <ClCompile Include="..\ZUI\control\Menu.c">
+      <Filter>源文件\ZUI\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ZUI\control\MenuBar.c">
+      <Filter>源文件\ZUI\control</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\ZUI\Zui.rc">
