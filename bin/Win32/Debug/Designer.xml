@@ -1,26 +1,37 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
 <Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FF293955" text="ZuiDesigner" mininfo="800,580" size="1024,768" name="window">
-	<VerticalLayout height="80" bkcolor="#FFD6DBE9"><!--头部-->
-		<VerticalLayout drag="true" height="30">
+	<VerticalLayout height="77" bkcolor="#FFD6DBE9"><!--头部-->
+		<VerticalLayout drag="true" height="25">
 			<HorizontalLayout name="head" drag="true"><!--标题栏-->
 				<HorizontalLayout name="Title" inset="0,0,28,0" drag="true">
+					<Label text="ZUI界面设计器" drag="true"/>
 				</HorizontalLayout>
 				<WindowCtl name="ctl"/>
 			</HorizontalLayout>	
 		</VerticalLayout>
 		<HorizontalLayout height="25"><!--菜单区-->
-		
+			<Button width="62" text="文件" padding="3,3,3,2"/>
+			<Button width="62" text="编辑" padding="3,3,3,2"/>
+			<Button width="62" text="文件" padding="3,3,3,2"/>
+			<Button width="62" text="文件" padding="3,3,3,2"/>
+			<Button width="62" text="帮助" padding="3,3,3,2"/>
 		</HorizontalLayout>
-		<HorizontalLayout height="25"><!--工具区-->
-		
+		<HorizontalLayout height="25" bkcolor="#FFCFD6E5"><!--工具区-->
+			<Button width="25" text="文件" padding="3,0,3,0"/>
+			<Button width="25" text="编辑" padding="3,0,3,0"/>
+			<Button width="25" text="工程" padding="3,0,3,0"/>
+			<Button width="25" text="文件" padding="3,0,3,0"/>
+			<Button width="25" text="帮助" padding="3,0,3,0"/>
 		</HorizontalLayout>
 	</VerticalLayout>
 	<NULL height="3" bkcolor="#FF293955"/>
 	<HorizontalLayout><!--功能区-->
 		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="180" width="180"><!--属性区-->
 			<TabLayout name="atttab" bkcolor="#FFFFFFFF">
-				<NULL height="3" bkcolor="#FF293955"/>
-				<NULL height="3" bkcolor="#FF293955"/>
+
+				<TileLayout>
+				
+				</TileLayout>
 			</TabLayout>
 			<HorizontalLayout height="22" name="atttabhead" bkcolor="#FF293955">
 				<Label text="工程" name="工程" bkcolor="#FFFFFFFF"/>
@@ -41,7 +52,28 @@
 		<SplitterBar width="3" bkcolor="#FF293955"/>
 		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="180" width="180"><!--工具区-->
 			<TabLayout name="tooltab">
-
+				<TileLayout itemsize="50,50">
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+					<Button text="文件" />
+				</TileLayout>
 			</TabLayout>
 			<HorizontalLayout height="22" name="tooltabhead" bkcolor="#FF293955">
 

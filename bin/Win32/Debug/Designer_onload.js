@@ -23,7 +23,7 @@ function DesignTabSelect(Index){
 	DesignTabSelectIndex=Index;
 	DesignTab.selectitem=Index-1;
 }
-function AddDesignTab(){
+function AddDesignTab(type){
 	var TabHead = new Control("HorizontalLayout");
 	TabHead.height=22;
 	TabHead.minwidth=60;
@@ -76,9 +76,16 @@ function AddDesignTab(){
 	
 	DesignTabHead.AddAt(TabHead);//添加到父控件
 	
-	
-	var Edit = new Control("CodeEdit");
-	DesignTab.Add(Edit);
+	if(type=="js"){
+		var Edit = new Control("CodeEdit");
+		DesignTab.Add(Edit);
+	}else if(type=="window"){
+		var Edit = new Control("CodeEdit");
+		DesignTab.Add(Edit);
+	}else if(type=="xml"){
+		var Edit = new Control("CodeEdit");
+		DesignTab.Add(Edit);
+	}
 	DesignTabSelect(DesignTab.count);
 	return Edit;
 }
@@ -130,10 +137,8 @@ function AttTabSelect(Index){
 
 
 //------------初始化代码
-AddDesignTab();
-AddDesignTab();
-AddDesignTab();
-AddDesignTab();
+AddDesignTab("window");
+AddDesignTab("xml");
 
 
 
