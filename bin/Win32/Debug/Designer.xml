@@ -1,5 +1,24 @@
 ﻿<?xml version="1.0" encoding="gbk"?>
 <Window nobox="true" bordercolor="#FF2A8BD7" bkcolor="#FF293955" text="ZuiDesigner" mininfo="800,580" size="1024,768" name="window">
+	<Menu name="file">
+		<MenuItem>
+			<Label text="新建"/>
+		</MenuItem>
+		<MenuItem>
+			<Label text="打开"/>
+		</MenuItem>
+		<MenuItem>
+			<Label text="保存"/>
+		</MenuItem>
+		<MenuItem>
+			<Label text="最近文件"/>
+			<Menu name="file">
+			</Menu>
+		</MenuItem>
+	</Menu>
+
+
+
 	<VerticalLayout height="77" bkcolor="#FFD6DBE9"><!--头部-->
 		<VerticalLayout drag="true" height="25">
 			<HorizontalLayout name="head" drag="true"><!--标题栏-->
@@ -38,7 +57,7 @@
 				<Label text="属性" name="属性" bkcolor="#FF4D6082"/>
 			</HorizontalLayout>
 		</VerticalLayout>
-		<SplitterBar width="3" bkcolor="#FF293955"/>
+		<SplitterBar width="3" bkcolor="#FF293955" sepside="left"/>
 		<VerticalLayout bkcolor="#FF293A56" name="design"><!--设计区-->
 			<HorizontalLayout height="22" name="designtabhead">
 
@@ -49,7 +68,7 @@
 
 			</TabLayout>
 		</VerticalLayout>
-		<SplitterBar width="3" bkcolor="#FF293955"/>
+		<SplitterBar width="3" bkcolor="#FF293955" sepside="right"/>
 		<VerticalLayout bkcolor="#FFD0D3D9" minwidth="180" width="180"><!--工具区-->
 			<TabLayout name="tooltab">
 				<TileLayout itemsize="50,50">
@@ -80,7 +99,7 @@
 			</HorizontalLayout>
 		</VerticalLayout>	
 	</HorizontalLayout>
-	<SplitterBar height="3" bkcolor="#FF293955"/>
+	<SplitterBar height="3" bkcolor="#FF293955" sepside="bottom"/>
 	<VerticalLayout bkcolor="#FFD0D0D9" height="120"><!--信息区-->
 		<TabLayout>
 				
