@@ -225,6 +225,9 @@
     <ClCompile Include="..\ZUI\control\MenuBar.c">
       <Filter>源文件\ZUI\control</Filter>
     </ClCompile>
+    <ClCompile Include="..\ZUI\vc6.cpp">
+      <Filter>源文件\ZUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\ZUI\Zui.rc">

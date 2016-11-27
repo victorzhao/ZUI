@@ -142,7 +142,8 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <AdditionalIncludeDirectories>$(ProjectDir);core\agg\include\</AdditionalIncludeDirectories>
-      <EnableEnhancedInstructionSet>NoExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -243,7 +244,9 @@
     <ClCompile Include="mujs\regexp.c" />
     <ClCompile Include="mujs\utf.c" />
     <ClCompile Include="mujs\utftype.c" />
-    <ClCompile Include="vc6.cpp" />
+    <ClCompile Include="vc6.cpp">
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</WholeProgramOptimization>
+    </ClCompile>
     <ClCompile Include="zlib\adler32.c" />
     <ClCompile Include="zlib\crc32.c" />
     <ClCompile Include="zlib\inffast.c" />
@@ -308,6 +311,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res.zip" />
+    <None Include="res\res.zip" />
     <None Include="Zui.def" />
   </ItemGroup>
   <ItemGroup>
