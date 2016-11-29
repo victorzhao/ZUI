@@ -168,6 +168,7 @@
     <ClCompile Include="..\ZUI\control\Button.c" />
     <ClCompile Include="..\ZUI\control\Edit.c" />
     <ClCompile Include="..\ZUI\control\Label.c" />
+    <ClCompile Include="..\ZUI\control\List.c" />
     <ClCompile Include="..\ZUI\control\Menu.c" />
     <ClCompile Include="..\ZUI\control\MenuBar.c" />
     <ClCompile Include="..\ZUI\control\Option.c" />

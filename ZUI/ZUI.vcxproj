@@ -190,6 +190,7 @@
     <ClCompile Include="control\Browser.c" />
     <ClCompile Include="control\Edit.c" />
     <ClCompile Include="control\Label.c" />
+    <ClCompile Include="control\List.c" />
     <ClCompile Include="control\Menu.c" />
     <ClCompile Include="control\MenuBar.c" />
     <ClCompile Include="control\Option.c" />
@@ -264,6 +265,7 @@
     <ClInclude Include="control\Browser.h" />
     <ClInclude Include="control\Edit.h" />
     <ClInclude Include="control\Label.h" />
+    <ClInclude Include="control\List.h" />
     <ClInclude Include="control\Menu.h" />
     <ClInclude Include="control\MenuBar.h" />
     <ClInclude Include="control\Option.h" />
